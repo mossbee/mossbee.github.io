@@ -150,6 +150,14 @@ h2 {
   margin: 0;
   font-family: 'Vollkorn', serif;
   font-size: 32px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.title {
+  font-family: 'Vollkorn', serif;
+  font-size: 22px;
+  font-weight: normal;
   text-align: left;
 }
 
