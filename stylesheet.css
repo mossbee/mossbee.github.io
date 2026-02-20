@@ -498,6 +498,25 @@ body.pub-show-all .pub-full {
 
 /* Responsive: stack avatar above intro on narrow viewports (phone / small width) */
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  #publication {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .pub-table {
+    max-width: 100%;
+    table-layout: fixed;
+  }
+  .pub-content-cell,
+  .pub-content-cell .papertitle,
+  .pub-content-cell a,
+  .pub-desc {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
   .profile-table tbody tr {
     display: block;
   }
@@ -548,6 +567,22 @@ body.pub-show-all .pub-full {
     justify-content: center;
   }
   body {
-    padding-top: 50px;
+    padding-top: 64px;
+  }
+  #publication {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .pub-table {
+    max-width: 100%;
+    table-layout: fixed;
+  }
+  .pub-content-cell,
+  .pub-content-cell .papertitle,
+  .pub-content-cell a,
+  .pub-desc {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
   }
 }
