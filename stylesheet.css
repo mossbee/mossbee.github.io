@@ -133,12 +133,12 @@ th,
 tr,
 p,
 a {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
 }
 
 strong {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -273,6 +273,26 @@ body.pub-show-all .pub-full {
 .pub-toggle:hover {
   color: #f09228;
   text-decoration: underline;
+}
+
+.toggle-button {
+  background: none;
+  border: 1px solid #1772d0;
+  border-radius: 20px;
+  color: #1772d0;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  margin-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.toggle-button:hover {
+  background-color: #1772d0;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(23, 114, 208, 0.3);
 }
 
 /* Square thumbnails: keep image aspect ratio, no stretch */

@@ -61,11 +61,20 @@ function loadSection(elementId, url, callback) {
 }
 
 function initPubToggle() {
-	var toggle = document.getElementById('pub-toggle');
-	if (toggle) {
-		toggle.addEventListener('click', function() {
-			document.body.classList.toggle('pub-show-all');
-			toggle.textContent = document.body.classList.contains('pub-show-all') ? '[Show selected only]' : '[Show all publications]';
+	var showFullBtn = document.getElementById('showFullListBtn');
+	var showSelectedBtn = document.getElementById('showSelectedListBtn');
+	if (showFullBtn) {
+		showFullBtn.addEventListener('click', function() {
+			document.body.classList.add('pub-show-all');
+			showFullBtn.style.display = 'none';
+			if (showSelectedBtn) showSelectedBtn.style.display = 'inline-block';
+		});
+	}
+	if (showSelectedBtn) {
+		showSelectedBtn.addEventListener('click', function() {
+			document.body.classList.remove('pub-show-all');
+			showSelectedBtn.style.display = 'none';
+			if (showFullBtn) showFullBtn.style.display = 'inline-block';
 		});
 	}
 }
