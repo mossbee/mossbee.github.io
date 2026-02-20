@@ -509,6 +509,45 @@ body.pub-show-all .pub-full {
     max-width: 100%;
     table-layout: fixed;
   }
+  /* Publication: stack image above text, image centered (like DravenALG) */
+  .pub-table tr {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .pub-table tr.pub-full {
+    display: none;
+  }
+  body.pub-show-all .pub-table tr.pub-full {
+    display: block;
+  }
+  .pub-table tr:last-child {
+    border-bottom: none;
+  }
+  .pub-img-cell {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-top: 16px;
+    text-align: center;
+  }
+  .pub-img-cell img {
+    max-width: 100%;
+    width: auto;
+    max-height: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pub-content-cell {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .pub-content-cell,
   .pub-content-cell .papertitle,
   .pub-content-cell a,
@@ -576,6 +615,45 @@ body.pub-show-all .pub-full {
   .pub-table {
     max-width: 100%;
     table-layout: fixed;
+  }
+  /* Force publication image above and centered on phone (same as DravenALG) */
+  .pub-table tr {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .pub-table tr.pub-full {
+    display: none;
+  }
+  body.pub-show-all .pub-table tr.pub-full {
+    display: block;
+  }
+  .pub-table tr:last-child {
+    border-bottom: none;
+  }
+  .pub-img-cell {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-top: 16px;
+    text-align: center;
+  }
+  .pub-img-cell img {
+    max-width: 100%;
+    width: auto;
+    max-height: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pub-content-cell {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .pub-content-cell,
   .pub-content-cell .papertitle,
