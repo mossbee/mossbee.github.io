@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -40,32 +40,25 @@
 			<a href="index.html" class="header-logo-link">Hoang-Nhat Nguyen</a>
 			<nav>
 				<a href="#bio">Bio</a>
-				<!-- <a href="#research">Research Interests</a> -->
-				<!-- <a href="#news">News</a> -->
 				<a href="#publication">Publications</a>
-				<!-- <a href="#education">Education</a> -->
 				<a href="#experience">Experiences</a>
 				<a href="#honors">Awards</a>
-				<!-- <a href="#miscellanea">Miscellanea</a> -->
 			</nav>
 		</div>
 	</header>
 
-	<table
-		style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+	<table class="main-container">
 		<tbody>
-			<tr style="padding:0px">
-				<td style="padding:0px">
-					<!-- Profile: avatar + short info -->
-					<table class="profile-table"
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+			<tr>
+				<td>
+					<table class="profile-table">
 						<tbody>
-							<tr style="padding:0px">
-								<td class="profile-avatar" style="padding:2.5%;width:37%;max-width:37%;vertical-align:middle;text-align:center">
+							<tr>
+								<td class="profile-avatar">
 									<a href="images/HoangNhat.png"><img
 											alt="Hoang-Nhat Nguyen (Nguyễn Hoàng Nhật) - PhD Student at NTU" src="images/HoangNhat.png" class="hoverZoomLink"></a>
 								</td>
-								<td class="profile-intro" style="padding:2.5%;width:63%;vertical-align:middle">
+								<td class="profile-intro">
 									<h1 class="name">Hoang-Nhat Nguyen</h1>
 									<span class="local-name">Nguyễn Hoàng Nhật</span>
 									<p class="profile-short">PhD Student</p>
@@ -91,7 +84,6 @@
 						</p>
 						<p>
 							Previously, I spent nearly two years as a Research Engineer at <a href="https://www.samsung.com/vn/about-us/business-area/r-and-d-center/">Samsung R&D Vietnam</a>. Before that, I served as a Research Assistant at <a href="https://cmcati.vn/">CMC Research Institute</a>, under the supervision of Assoc. Prof. <a href="https://scholar.google.com.vn/citations?user=x-H87vsAAAAJ">Nguyen Thi Ngoc Anh</a>, who was also my undergraduate thesis advisor at <a href="https://www.hust.edu.vn/en/">Hanoi University of Science and Technology</a>.
-							<!-- Previously, I worked as a Research Engineer at <a href="https://www.samsung.com/vn/about-us/business-area/r-and-d-center/">Samsung R&D Vietnam</a> and as a Research Assistant at <a href="https://cmcati.vn/">CMC Research Institute</a>, under the supervision of Assoc. Prof. <a href="https://scholar.google.com.vn/citations?user=x-H87vsAAAAJ">Nguyen Thi Ngoc Anh</a>. She was also my undergraduate thesis advisor at <a href="https://www.hust.edu.vn/en/">Hanoi University of Science and Technology (HUST)</a>. -->
 						</p>
 						<p>
 							You can call me Nhật, Nhat or Leo.
@@ -106,10 +98,6 @@
 					<div id="news">
 						<h2>News</h2>
 						<div class="news-scroll">
-							<!-- <ul style="margin:0; padding-left:20px;">
-								<li><strong>[2025]</strong> Paper accepted at AAAI 2026 on identical twin face verification.</li>
-								<li><strong>[2024]</strong> Graduated from Hanoi University of Science and Technology with Excellent degree.</li>
-							</ul> -->
 							<div class="news-item"><span class="news-date">[2026-01]</span> Starting my PhD journey at NTU!</div>
 							<div class="news-item"><span class="news-date">[2025-11]</span> AHAN accepted to AAAI 2026.</div>
 						</div>
@@ -119,7 +107,7 @@
 							<h2>Publications</h2>
 							<p>
 								<button id="showFullListBtn" class="toggle-button">Show all publications</button>
-								<button id="showSelectedListBtn" class="toggle-button" style="display:none;">Show selected only</button>
+								<button id="showSelectedListBtn" class="toggle-button hidden">Show selected only</button>
 							</p>
 						</div>
 						<table class="pub-table">
@@ -174,32 +162,31 @@
 					</div>
 					<div id="experience">
 						<h2>Experiences</h2>
-						<table
-							style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;table-layout:fixed">
+						<table class="section-table">
 							<tbody>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<a href="https://www.samsung.com/vn/about-us/business-area/r-and-d-center/"><img src="images/logos/srv.png" alt="Samsung" class="logo-contain" onerror="this.style.display='none'"></a>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										<strong>Research Engineer</strong> &nbsp;|&nbsp; <a href="https://www.samsung.com/vn/about-us/business-area/r-and-d-center/">Samsung R&amp;D Vietnam</a> <br>
 										March 2024 – December 2025
 									</td>
 								</tr>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<a href="https://cmcati.vn/"><img src="images/logos/cmc.png" alt="CMC" class="logo-contain" onerror="this.style.display='none'"></a>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										<strong>Research Assistant</strong> &nbsp;|&nbsp; <a href="https://cmcati.vn/">CMC Research Institute</a> <br>
 										October 2023 – March 2024
 									</td>
 								</tr>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<a href="https://www.var-meta.com/"><img src="images/logos/varmeta.png" alt="VAR-META" class="logo-contain" onerror="this.style.display='none'"></a>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										<strong>AI Engineer Intern</strong> &nbsp;|&nbsp; <a href="https://www.var-meta.com/">VAR-META</a> <br>
 										November 2023 – March 2024
 									</td>
@@ -209,24 +196,23 @@
 					</div>
 					<div id="education">
 						<h2>Education</h2>
-						<table
-							style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;table-layout:fixed">
+						<table class="section-table">
 							<tbody>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<a href="https://www.ntu.edu.sg"><img src="images/logos/ntu.png" alt="NTU" class="logo-contain"></a>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										<strong><a href="https://www.ntu.edu.sg" class="edu-school-vollkorn">Nanyang Technological University</a></strong>, Singapore<br>
 										PhD in Computer Science<br>
 										January 2026 – Present &nbsp;|&nbsp; College of Computing and Data Science
 									</td>
 								</tr>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<a href="https://www.hust.edu.vn/en/"><img src="images/logos/hust.png" alt="HUST" class="logo-contain" onerror="this.style.display='none'"></a>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										<strong><a href="https://www.hust.edu.vn/en/">Hanoi University of Science and Technology</a></strong>, Vietnam<br>
 										B.E. in Mathematics and Informatics (Talented Program)<br>
 										October 2020 – August 2024 &nbsp;|&nbsp; Excellent degree
@@ -237,7 +223,7 @@
 					</div>
 					<div id="honors">
 						<h2>Honors &amp; Awards</h2>
-						<ul style="margin:0; padding-left:20px;">
+						<ul>
 							<li>NTU PhD Research Scholarship, 2025</li>
 							<li>Samsung Talent Program Scholarship, 2024</li>
 							<li>HUST Study Encouragement Scholarship, 2022, 2024</li>
@@ -248,14 +234,13 @@
 
 					<div id="miscellanea">
 						<h2>Miscellanea</h2>
-						<table
-							style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+						<table class="section-table" style="border-spacing:0;">
 							<tbody>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<h2>Services</h2>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										Conference Reviewer: AAAI 2026, IJCAI 2025
 										<br>
 										Journal Reviewer: KBS, EAAI
@@ -263,18 +248,18 @@
 									</td>
 								</tr>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<h2>Activities</h2>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										Head of News Team, Ha Tinh High School for Gifted Students Media Club, 2019
 									</td>
 								</tr>
 								<tr>
-									<td style="padding:16px;width:20%;vertical-align:middle">
+									<td class="table-logo-cell">
 										<h2>Hobbies</h2>
 									</td>
-									<td style="padding:8px;width:80%;vertical-align:middle">
+									<td class="table-content-cell">
 										In my free time, I play football ⚽, ping pong 🏓, guitar 🎸, <a href="https://www.instagram.com/moss_bee/">drawing 🎨</a>, <a href="https://www.instagram.com/weeklymossbeeing/">photography 📸</a>, and <a href="https://www.youtube.com/@moss_bee">videography 🎥</a>.
 									</td>
 								</tr>
@@ -282,12 +267,12 @@
 						</table>
 					</div>
 
-					<footer class="site-footer" style="margin-top:40px;padding:20px 0;text-align:center;border-top:1px solid #eee;">
-						<p style="color:#a00000;font-style:italic;font-size:1.1em;margin-bottom:20px;">
+					<footer class="site-footer">
+						<p class="footer-quote">
 							&ldquo;To see the world, things dangerous to come to, to see behind walls, draw closer, to find each other and to feel. That is the purpose of life.&rdquo;
 						</p>
-						<p style="font-size:small;color:#666;margin:0;">
-							Website template by <a href="https://github.com/jonbarron/jonbarron_website" style="color:#a00000;">Jon Barron</a>
+						<p class="footer-credit">
+							Website template by <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
 						</p>
 					</footer>
 				</td>
@@ -295,22 +280,21 @@
 		</tbody>
 	</table>
 	<script>
-		// Publication toggle functionality
-		document.addEventListener('DOMContentLoaded', function() {
-			var showFullBtn = document.getElementById('showFullListBtn');
-			var showSelectedBtn = document.getElementById('showSelectedListBtn');
+		document.addEventListener('DOMContentLoaded', () => {
+			const showFullBtn = document.getElementById('showFullListBtn');
+			const showSelectedBtn = document.getElementById('showSelectedListBtn');
 			if (showFullBtn) {
-				showFullBtn.addEventListener('click', function() {
+				showFullBtn.addEventListener('click', () => {
 					document.body.classList.add('pub-show-all');
-					showFullBtn.style.display = 'none';
-					if (showSelectedBtn) showSelectedBtn.style.display = 'inline-block';
+					showFullBtn.classList.add('hidden');
+					showSelectedBtn?.classList.remove('hidden');
 				});
 			}
 			if (showSelectedBtn) {
-				showSelectedBtn.addEventListener('click', function() {
+				showSelectedBtn.addEventListener('click', () => {
 					document.body.classList.remove('pub-show-all');
-					showSelectedBtn.style.display = 'none';
-					if (showFullBtn) showFullBtn.style.display = 'inline-block';
+					showSelectedBtn.classList.add('hidden');
+					showFullBtn?.classList.remove('hidden');
 				});
 			}
 		});
