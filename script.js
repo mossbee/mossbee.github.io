@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		{ id: 'news', url: 'sections/news.html' },
 		{ id: 'publication', url: 'sections/publication.html' },
 		{ id: 'education', url: 'sections/education.html' },
-		{ id: 'honors', url: 'sections/honors.html' },
 		{ id: 'experience', url: 'sections/experience.html' },
+		{ id: 'honors', url: 'sections/honors.html' },
 		{ id: 'miscellanea', url: 'sections/miscellanea.html' }
 	];
 

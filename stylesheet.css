@@ -275,6 +275,10 @@ span.highlight {
   font-size: 15px;
   font-weight: 300;
 }
+.pub-content-cell strong,
+.pub-content-cell em {
+  font-family: 'Vollkorn', serif;
+}
 .pub-desc {
   margin-bottom: 15px;
   margin-top: 8px;
@@ -524,6 +528,9 @@ body.pub-show-all .pub-full {
 
 /* Responsive: stack avatar above intro on narrow viewports (phone / small width) */
 @media (max-width: 600px) {
+  body {
+    padding-top: 60px;
+  }
   .profile-table tbody tr {
     display: block;
   }
@@ -559,6 +566,35 @@ body.pub-show-all .pub-full {
     text-align: center;
   }
 
+  /* Publication: stack image above text, image centered (like avatar) */
+  .pub-table tr {
+    display: block;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eee;
+  }
+  .pub-table tr:last-child {
+    border-bottom: none;
+  }
+  .pub-img-cell {
+    display: block;
+    width: 100% !important;
+    padding: 16px 16px 8px 16px;
+    text-align: center;
+  }
+  .pub-img-cell img {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .pub-content-cell {
+    display: block;
+    width: 100% !important;
+    padding: 8px 16px 20px 16px;
+    text-align: left;
+  }
+
   /* Header: fewer nav links or hide on very small screens */
   .fixed-header nav a {
     margin-left: 12px;
@@ -574,6 +610,6 @@ body.pub-show-all .pub-full {
     justify-content: center;
   }
   body {
-    padding-top: 50px;
+    padding-top: 64px;
   }
 }
