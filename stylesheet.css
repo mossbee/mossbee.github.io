@@ -572,6 +572,12 @@ body.pub-show-all .pub-full {
     margin-bottom: 24px;
     border-bottom: 1px solid #eee;
   }
+  .pub-table tr.pub-full {
+    display: none;
+  }
+  body.pub-show-all .pub-table tr.pub-full {
+    display: block;
+  }
   .pub-table tr:last-child {
     border-bottom: none;
   }
