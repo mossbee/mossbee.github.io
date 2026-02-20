@@ -413,7 +413,7 @@ body.pub-show-all .pub-full {
   display: flex;
   align-items: center;
   font-family: 'Vollkorn', serif;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 /* Section placeholders (before content is loaded) and loaded section spacing */
@@ -467,6 +467,9 @@ body.pub-show-all .pub-full {
   margin-bottom: 10px;
 }
 
+#research strong {
+  font-family: 'Vollkorn', serif;
+}
 #experience strong {
   font-family: 'Vollkorn', serif;
 }
