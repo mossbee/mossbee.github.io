@@ -161,8 +161,9 @@ body.pub-show-all .pub-full {
   color: #1772d0;
   text-decoration: none;
   cursor: pointer;
+  font-family: 'Vollkorn', serif;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: normal;
   padding: 6px 16px;
   margin-top: 10px;
   display: inline-block;
