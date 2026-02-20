@@ -416,12 +416,7 @@ body.pub-show-all .pub-full {
   font-size: 22px;
 }
 
-/* Section placeholders (before content is loaded) and loaded section spacing */
-.section-placeholder {
-  padding: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
+/* Section spacing */
 #bio, #research, #news, #publication, #education, #honors, #experience, #miscellanea {
   padding: 16px;
   width: 100%;
@@ -472,16 +467,6 @@ body.pub-show-all .pub-full {
 }
 #experience strong {
   font-family: 'Vollkorn', serif;
-}
-
-.load-error {
-  color: #666;
-}
-.load-error code {
-  background: #eee;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.9em;
 }
 
 /* Short info next to avatar (profile section only) */
