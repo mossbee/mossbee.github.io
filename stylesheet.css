@@ -174,7 +174,7 @@ h2:hover::after {
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 16px;
   font-weight: 700;
   color: #111;
@@ -265,15 +265,18 @@ span.highlight {
   padding: 8px;
   width: 80%;
   vertical-align: middle;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 15px;
   font-weight: 300;
   color: #333;
 }
 .pub-content-cell a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 15px;
   font-weight: 300;
+}
+.pub-content-cell strong {
+  font-family: 'Vollkorn', serif;
 }
 .pub-desc {
   margin-bottom: 15px;
@@ -281,7 +284,7 @@ span.highlight {
   font-size: 14px;
   font-style: italic;
   color: #555;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-weight: 300;
 }
 .pub-full {
@@ -419,7 +422,7 @@ body.pub-show-all .pub-full {
   width: 100%;
   box-sizing: border-box;
 }
-#bio, #news, #publication, #education, #honors, #experience, #miscellanea {
+#bio, #research, #news, #publication, #education, #honors, #experience, #miscellanea {
   padding: 16px;
   width: 100%;
   box-sizing: border-box;

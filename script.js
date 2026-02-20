@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 	var sections = [
 		{ id: 'bio', url: 'sections/bio.html' },
+		{ id: 'research', url: 'sections/research.html' },
 		{ id: 'news', url: 'sections/news.html' },
 		{ id: 'publication', url: 'sections/publication.html' },
 		{ id: 'education', url: 'sections/education.html' },
