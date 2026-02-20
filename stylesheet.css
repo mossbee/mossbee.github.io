@@ -126,6 +126,7 @@ body {
   padding-top: 56px;
   margin: 0;
   line-height: 1.6;
+  letter-spacing: 0.01em;
 }
 
 body,
@@ -173,7 +174,7 @@ h2:hover::after {
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 16px;
   font-weight: 700;
   color: #111;
@@ -264,13 +265,13 @@ span.highlight {
   padding: 8px;
   width: 80%;
   vertical-align: middle;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 15px;
   font-weight: 300;
   color: #333;
 }
 .pub-content-cell a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 15px;
   font-weight: 300;
 }
@@ -280,7 +281,7 @@ span.highlight {
   font-size: 14px;
   font-style: italic;
   color: #555;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-weight: 300;
 }
 .pub-full {
@@ -334,6 +335,10 @@ body.pub-show-all .pub-full {
   object-fit: contain;
   object-position: center;
   display: block;
+}
+
+.edu-school-vollkorn {
+  font-family: 'Vollkorn', serif;
 }
 
 /* --- Fixed upper bar (header) --- */
@@ -434,10 +439,11 @@ body.pub-show-all .pub-full {
   margin: 0;
   padding-left: 20px;
 }
-.news-scroll li {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.5;
+.news-scroll li,
+.news-scroll .news-item {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.2;
 }
 .news-scroll::-webkit-scrollbar {
   width: 6px;
@@ -451,6 +457,41 @@ body.pub-show-all .pub-full {
 }
 .news-scroll::-webkit-scrollbar-thumb:hover {
   background: #bbb;
+}
+
+/* Honors & Awards scroll box (same style as news) */
+.honors-scroll {
+  max-height: 160px;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px 10px 25px;
+  background-color: transparent;
+}
+.honors-scroll ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.honors-scroll li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+.honors-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.honors-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.honors-scroll::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+.honors-scroll::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+#experience strong {
+  font-family: 'Vollkorn', serif;
 }
 
 .load-error {
