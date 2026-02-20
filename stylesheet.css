@@ -583,20 +583,22 @@ body.pub-show-all .pub-full {
   }
   .pub-img-cell {
     display: block;
-    width: 100% !important;
+    width: 100%;
     padding: 16px 16px 8px 16px;
     text-align: center;
   }
   .pub-img-cell img {
-    max-width: 200px;
+    max-width: 100%;
     width: auto;
     height: auto;
-    margin: 0 auto;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
   }
   .pub-content-cell {
     display: block;
-    width: 100% !important;
+    width: 100%;
     padding: 8px 16px 20px 16px;
     text-align: left;
   }
@@ -608,7 +610,8 @@ body.pub-show-all .pub-full {
   }
 }
 
-@media (max-width: 480px) {
+/* Phone: match DravenALG - publication image above & centered, ensure stacking works */
+@media screen and (max-width: 480px) {
   .fixed-header nav {
     display: none;
   }
@@ -617,5 +620,46 @@ body.pub-show-all .pub-full {
   }
   body {
     padding-top: 64px;
+  }
+
+  /* Force publication table to stack on phone (same as DravenALG) */
+  .pub-table tr {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .pub-table tr.pub-full {
+    display: none;
+  }
+  body.pub-show-all .pub-table tr.pub-full {
+    display: block;
+  }
+  .pub-table tr:last-child {
+    border-bottom: none;
+  }
+  .pub-img-cell {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-top: 16px;
+    text-align: center;
+  }
+  .pub-img-cell img {
+    max-width: 100%;
+    width: auto;
+    max-height: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pub-content-cell {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
   }
 }
