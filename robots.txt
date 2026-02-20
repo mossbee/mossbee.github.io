@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mossbee.github.io/sitemap.xml
