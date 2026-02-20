@@ -494,6 +494,7 @@ body.pub-show-all .pub-full {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #a00000;
+  margin-top: 1.5em;  /* move profile image down */
 }
 
 /* Responsive: stack avatar above intro on narrow viewports (phone / small width) */
