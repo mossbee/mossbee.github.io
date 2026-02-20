@@ -174,7 +174,7 @@ h2:hover::after {
 }
 
 .papertitle {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #111;
@@ -265,19 +265,15 @@ span.highlight {
   padding: 8px;
   width: 80%;
   vertical-align: middle;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: #333;
 }
 .pub-content-cell a {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
-}
-.pub-content-cell strong,
-.pub-content-cell em {
-  font-family: 'Vollkorn', serif;
 }
 .pub-desc {
   margin-bottom: 15px;
@@ -285,7 +281,7 @@ span.highlight {
   font-size: 14px;
   font-style: italic;
   color: #555;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 300;
 }
 .pub-full {
@@ -463,35 +459,9 @@ body.pub-show-all .pub-full {
   background: #bbb;
 }
 
-/* Honors & Awards scroll box (same style as news) */
-.honors-scroll {
-  max-height: 160px;
-  overflow-y: auto;
-  margin-top: 10px;
+#honors ul li {
+  line-height: 1.2;
   margin-bottom: 10px;
-  padding: 10px 15px 10px 25px;
-  background-color: transparent;
-}
-.honors-scroll ul {
-  margin: 0;
-  padding-left: 20px;
-}
-.honors-scroll li {
-  margin-bottom: 10px;
-  line-height: 1.7;
-}
-.honors-scroll::-webkit-scrollbar {
-  width: 6px;
-}
-.honors-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-.honors-scroll::-webkit-scrollbar-thumb {
-  background: #ddd;
-  border-radius: 3px;
-}
-.honors-scroll::-webkit-scrollbar-thumb:hover {
-  background: #bbb;
 }
 
 #experience strong {
@@ -528,9 +498,6 @@ body.pub-show-all .pub-full {
 
 /* Responsive: stack avatar above intro on narrow viewports (phone / small width) */
 @media (max-width: 600px) {
-  body {
-    padding-top: 60px;
-  }
   .profile-table tbody tr {
     display: block;
   }
@@ -566,43 +533,6 @@ body.pub-show-all .pub-full {
     text-align: center;
   }
 
-  /* Publication: stack image above text, image centered (like avatar) */
-  .pub-table tr {
-    display: block;
-    margin-bottom: 24px;
-    border-bottom: 1px solid #eee;
-  }
-  .pub-table tr.pub-full {
-    display: none;
-  }
-  body.pub-show-all .pub-table tr.pub-full {
-    display: block;
-  }
-  .pub-table tr:last-child {
-    border-bottom: none;
-  }
-  .pub-img-cell {
-    display: block;
-    width: 100%;
-    padding: 16px 16px 8px 16px;
-    text-align: center;
-  }
-  .pub-img-cell img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    max-height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  .pub-content-cell {
-    display: block;
-    width: 100%;
-    padding: 8px 16px 20px 16px;
-    text-align: left;
-  }
-
   /* Header: fewer nav links or hide on very small screens */
   .fixed-header nav a {
     margin-left: 12px;
@@ -610,8 +540,7 @@ body.pub-show-all .pub-full {
   }
 }
 
-/* Phone: match DravenALG - publication image above & centered, ensure stacking works */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .fixed-header nav {
     display: none;
   }
@@ -619,47 +548,6 @@ body.pub-show-all .pub-full {
     justify-content: center;
   }
   body {
-    padding-top: 64px;
-  }
-
-  /* Force publication table to stack on phone (same as DravenALG) */
-  .pub-table tr {
-    display: block;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-  }
-  .pub-table tr.pub-full {
-    display: none;
-  }
-  body.pub-show-all .pub-table tr.pub-full {
-    display: block;
-  }
-  .pub-table tr:last-child {
-    border-bottom: none;
-  }
-  .pub-img-cell {
-    display: block;
-    width: 100%;
-    padding-right: 0;
-    padding-bottom: 10px;
-    padding-top: 16px;
-    text-align: center;
-  }
-  .pub-img-cell img {
-    max-width: 100%;
-    width: auto;
-    max-height: 200px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .pub-content-cell {
-    display: block;
-    width: 100%;
-    padding-bottom: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-align: left;
+    padding-top: 50px;
   }
 }
