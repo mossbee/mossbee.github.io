@@ -69,7 +69,7 @@ h2:hover::after {
 
 .papertitle {
   font-family: 'Vollkorn', serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: #111;
 }
@@ -119,38 +119,48 @@ h2:hover::after {
   margin-left: auto;
 }
 .pub-table tbody tr {
-  border-bottom: 1px solid #e8e8e8;
   transition: background-color 0.2s ease;
 }
-.pub-table tbody tr:last-child {
-  border-bottom: none;
-}
 .pub-table tbody tr:hover td {
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 .pub-table tbody tr td {
   transition: background-color 0.2s ease;
 }
 .pub-img-cell {
-  padding-top: 50px;    /* Increased from 25px */
-  padding-bottom: 50px; /* Increased from 25px */
+  padding-top: 32px;
+  padding-bottom: 36px;
   padding-right: 25px;
   padding-left: 20px;
   width: 25%;
   vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
 }
-
+.pub-table tbody tr:first-child .pub-img-cell {
+  padding-top: 25px;
+}
+.pub-table tbody tr:not(:first-child) .pub-img-cell,
+.pub-table tbody tr:not(:first-child) .pub-content-cell {
+  padding-top: 20px;
+}
 .pub-content-cell {
-  padding-top: 50px;    /* Increased from 25px */
-  padding-bottom: 50px; /* Increased from 25px */
+  padding-top: 32px;
+  padding-bottom: 36px;
   padding-left: 25px;
   padding-right: 20px;
   width: 75%;
   vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
   font-family: 'Vollkorn', serif;
   font-size: 15px;
   font-weight: 300;
   color: #333;
+}
+.pub-table tbody tr:first-child .pub-content-cell {
+  padding-top: 25px;
+}
+.pub-table tbody tr:last-child td {
+  border-bottom: none;
 }
 .pub-content-cell a {
   font-family: 'Vollkorn', serif;
@@ -159,6 +169,8 @@ h2:hover::after {
 }
 .pub-content-cell strong {
   font-family: 'Vollkorn', serif;
+  font-size: 15px;
+  font-weight: 700;
 }
 .pub-desc {
   margin-bottom: 15px;
@@ -185,7 +197,7 @@ body.pub-show-all .pub-full {
   cursor: pointer;
   font-family: 'Vollkorn', serif;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: bold;
   padding: 6px 16px;
   margin-top: 10px;
   display: inline-block;
@@ -436,13 +448,19 @@ body.pub-show-all .pub-full {
   font-family: 'Vollkorn', serif;
 }
 
-/* Miscellanea: smaller headings for Services, Activities, Hobbies */
+/* Miscellanea: sub-section headings (Services, Activities, Hobbies) — between main h2 and body text */
 #miscellanea .table-logo-cell h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 0 12px 0;
 }
 #miscellanea .table-logo-cell h2::after {
   margin-top: 4px;
+}
+#miscellanea .table-content-cell {
+  font-size: 15px;
+}
+#miscellanea .table-content-cell a {
+  font-size: 15px;
 }
 
 /* Short info next to avatar (profile section only) */
@@ -496,7 +514,7 @@ body.pub-show-all .pub-full {
     width: 100%;
     padding-right: 0;
     padding-bottom: 10px;
-    padding-top: 16px;
+    padding-top: 25px;
     text-align: center;
   }
   .pub-img-cell img {
@@ -511,7 +529,7 @@ body.pub-show-all .pub-full {
   .pub-content-cell {
     display: block;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 20px;
     padding-left: 16px;
     padding-right: 16px;
@@ -607,7 +625,7 @@ body.pub-show-all .pub-full {
     padding-bottom: 4px;
   }
   #miscellanea .table-logo-cell h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
