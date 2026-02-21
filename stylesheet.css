@@ -111,18 +111,31 @@ h2:hover::after {
 .pub-table {
   width: 100%;
   border: 0;
-  border-spacing: 0 10px;
-  border-collapse: separate;
+  border-spacing: 0 0;
+  border-collapse: collapse;
   margin-right: auto;
   margin-left: auto;
 }
+.pub-table tbody tr {
+  border-bottom: 1px solid #e8e8e8;
+  transition: background-color 0.2s ease;
+}
+.pub-table tbody tr:last-child {
+  border-bottom: none;
+}
+.pub-table tbody tr:hover td {
+  background-color: #f5f5f5;
+}
+.pub-table tbody tr td {
+  transition: background-color 0.2s ease;
+}
 .pub-img-cell {
-  padding: 16px;
+  padding: 24px 32px 24px 16px;
   width: 20%;
   vertical-align: middle;
 }
 .pub-content-cell {
-  padding: 8px;
+  padding: 24px 8px 24px 32px;
   width: 80%;
   vertical-align: middle;
   font-family: 'Vollkorn', serif;
@@ -413,6 +426,15 @@ body.pub-show-all .pub-full {
   font-family: 'Vollkorn', serif;
 }
 
+/* Miscellanea: smaller headings for Services, Activities, Hobbies */
+#miscellanea .table-logo-cell h2 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+#miscellanea .table-logo-cell h2::after {
+  margin-top: 4px;
+}
+
 /* Short info next to avatar (profile section only) */
 .profile-short {
   margin: 4px 0;
@@ -532,6 +554,24 @@ body.pub-show-all .pub-full {
   /* Prevent logos from overlapping text on narrow screens (logo is 80px) */
   .table-content-cell {
     padding-left: 100px;
+  }
+  /* Miscellanea: stack label above content to prevent overlap; smaller headings */
+  #miscellanea .section-table tr {
+    display: block;
+    margin-bottom: 16px;
+  }
+  #miscellanea .section-table .table-logo-cell,
+  #miscellanea .section-table .table-content-cell {
+    display: block;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #miscellanea .section-table .table-logo-cell {
+    padding-bottom: 4px;
+  }
+  #miscellanea .table-logo-cell h2 {
+    font-size: 16px;
   }
 }
 
