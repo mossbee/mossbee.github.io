@@ -529,6 +529,10 @@ body.pub-show-all .pub-full {
     margin-left: 12px;
     font-size: 14px;
   }
+  /* Prevent logos from overlapping text on narrow screens (logo is 80px) */
+  .table-content-cell {
+    padding-left: 100px;
+  }
 }
 
 @media (max-width: 480px) {
