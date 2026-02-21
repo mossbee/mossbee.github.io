@@ -130,13 +130,20 @@ h2:hover::after {
   transition: background-color 0.2s ease;
 }
 .pub-img-cell {
-  padding: 24px 32px 24px 16px;
-  width: 20%;
+  padding-top: 50px;    /* Increased from 25px */
+  padding-bottom: 50px; /* Increased from 25px */
+  padding-right: 25px;
+  padding-left: 20px;
+  width: 25%;
   vertical-align: middle;
 }
+
 .pub-content-cell {
-  padding: 24px 8px 24px 32px;
-  width: 80%;
+  padding-top: 50px;    /* Increased from 25px */
+  padding-bottom: 50px; /* Increased from 25px */
+  padding-left: 25px;
+  padding-right: 20px;
+  width: 75%;
   vertical-align: middle;
   font-family: 'Vollkorn', serif;
   font-size: 15px;
@@ -501,6 +508,7 @@ body.pub-show-all .pub-full {
   .pub-content-cell {
     display: block;
     width: 100%;
+    padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 16px;
     padding-right: 16px;
