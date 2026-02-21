@@ -631,6 +631,10 @@ body.pub-show-all .pub-full {
   #miscellanea .table-logo-cell h2 {
     font-size: 18px;
   }
+  .site-footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 @media (max-width: 480px) {
