@@ -12,6 +12,7 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   margin: 0;
   line-height: 1.6;
   letter-spacing: 0.01em;
+  overflow-x: hidden;
 }
 
 body,
@@ -202,6 +204,7 @@ body.pub-show-all .pub-full {
 .main-container {
   width: 100%;
   max-width: 800px;
+  box-sizing: border-box;
   border: 0;
   border-spacing: 0;
   border-collapse: separate;
@@ -555,13 +558,37 @@ body.pub-show-all .pub-full {
   .profile-table .profile-intro .profile-links {
     text-align: center;
   }
+  .profile-intro,
+  .table-content-cell {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
   .fixed-header nav a {
     margin-left: 12px;
     font-size: 14px;
   }
-  /* Prevent logos from overlapping text on narrow screens (logo is 80px) */
-  .table-content-cell {
-    padding-left: 100px;
+  /* Experience & Education: stack logo above content on narrow screens (like Miscellanea) */
+  #experience .section-table tr,
+  #education .section-table tr {
+    display: block;
+    margin-bottom: 16px;
+  }
+  #experience .section-table .table-logo-cell,
+  #experience .section-table .table-content-cell,
+  #education .section-table .table-logo-cell,
+  #education .section-table .table-content-cell {
+    display: block;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  #experience .section-table .table-logo-cell,
+  #education .section-table .table-logo-cell {
+    padding-bottom: 4px;
+  }
+  .section-table .table-logo-cell .logo-contain {
+    max-width: 100%;
   }
   /* Miscellanea: stack label above content to prevent overlap; smaller headings */
   #miscellanea .section-table tr {
@@ -574,6 +601,7 @@ body.pub-show-all .pub-full {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    box-sizing: border-box;
   }
   #miscellanea .section-table .table-logo-cell {
     padding-bottom: 4px;
