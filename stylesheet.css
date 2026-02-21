@@ -152,7 +152,7 @@ h2:hover::after {
   vertical-align: middle;
   border-bottom: 1px solid #f0f0f0;
   font-family: 'Vollkorn', serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   color: #333;
 }
@@ -164,12 +164,12 @@ h2:hover::after {
 }
 .pub-content-cell a {
   font-family: 'Vollkorn', serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
 .pub-content-cell strong {
   font-family: 'Vollkorn', serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
 }
 .pub-desc {
@@ -273,6 +273,10 @@ body.pub-show-all .pub-full {
   padding: 8px;
   width: 80%;
   vertical-align: middle;
+}
+
+#education .section-table {
+  border-spacing: 0 24px;
 }
 
 /* Honors list */
